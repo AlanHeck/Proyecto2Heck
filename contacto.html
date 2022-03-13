@@ -32,7 +32,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="niños.html">Niños</a>
@@ -44,7 +44,7 @@
                     <a class="nav-link" href="hombres.html">Hombres</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -53,29 +53,39 @@
           </nav>    
       </header>
 
+      <main>
+          <div class="container py-4">
+              <div class="row"> 
+                  <h2>Tu opinion nos interesa</h2>
+                  <div class="col-md-12 pt-5">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ej.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Esribinos</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <button type="button" class="btn btn-dark">Enviar</button>
+                      </div>
+                  </div>
+                  <div class="col-md-12 py-5">
+                      <h3>Cual seccion te gusta mas</h3>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecciona</option>
+                        <option value="1">Niños</option>
+                        <option value="2">Mujeres</option>
+                        <option value="3">Hombres</option>
+                      </select>
+                      <button type="button" class="btn btn-dark">Enviar</button>
+                  </div>
 
-
-      <main class="pt-4 foto">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-              <h1>Niños</h1>
-              <a href="niños.html" class="btn btn-dark">Conoce mas</a>
-                <img src="Imagenes/niño.jpg"  class="d-block w-100 pt-4" alt="niñozapa">
               </div>
-              <div class="carousel-item">
-                <h1>Mujeres</h1>
-                <a href="mujeres.html" class="btn btn-dark">Conoce mas</a>
-                <img src="Imagenes/mujer.jpg" class="d-block w-100 pt-4" alt="mujerzapa">
-              </div>
-              <div class="carousel-item">
-                <h1>Hombres</h1>
-                <a href="hombres.html" class="btn btn-dark">Conoce mas</a>
-                <img src="Imagenes/hombre.jpg" class="d-block w-100 pt-4" alt="hombrezapa">
-              </div>
-            </div>
-        
+          </div>
       </main>
+
+
 
 
 
