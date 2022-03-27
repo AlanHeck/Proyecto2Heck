@@ -25,6 +25,10 @@ a {
 [alt="logo zapatilla"] {
   outline: 5px solid red; }
 
+.img-fotos {
+  height: 20rem;
+  object-fit: cover; }
+
 .movimiento:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 50px grey; }
