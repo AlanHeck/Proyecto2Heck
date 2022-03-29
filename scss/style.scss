@@ -1,0 +1,47 @@
+@import "colores";
+@import "mixins";
+
+body {
+    background-color: map-get($paleta, "terciario");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    h4 {
+        color: red;
+    }
+    h1 {
+        display: inline;
+        font-size: 1.5rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+.img-fotos {
+    height: 20rem;
+    object-fit: cover;
+}
+
+.subrayado {
+    @extend a;
+    text-decoration: underline;
+    text-decoration-color: map-get($paleta, "secundario");
+}
+
+.movimiento:hover {
+    transform: scale(1.1);
+    @include sombreado(5, hsla(0, 0%, 10%, 0.5));
+}
+
+.sombra-boton{
+    @include sombreado(5, hsla(0, 0%, 10%, 0.5));
+}
+
+.imagen-sombra{
+    @include sombreado(5, hsla(0, 0%, 20%, 0.75))
+}
+
+
+

@@ -1,0 +1,4 @@
+@mixin sombreado($profundidad, $color: map-get($paleta, "dark")) {
+    box-shadow: 0 (2.5px * $profundidad) (5px * $profundidad) $color;
+}
+
